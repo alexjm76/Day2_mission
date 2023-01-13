@@ -1,14 +1,17 @@
 import random
 
-secret = random.randint(1,10)
+small = True
+green = False
 
-guess = int(input("숫자 1~10까지 한 숫자를 입력해 주세요 : "))
-
-if guess < secret:
-    print("too low")
-elif guess > secret:
-    print("too high")
+if small == True:
+    if green == True:
+        print("pea")
+    else:
+        print("cherry")
 else:
-    print("just right")
+    if green == True:
+        print("watermelon")
+    else:
+        print("pumpkin")
 
-print(f"숫자는 {secret}였습니다")
+
